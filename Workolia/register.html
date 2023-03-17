@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/favicon-16x16.png"
+        sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/favicon-16x16.png"
+        sizes="16x16" />
+    <link rel="manifest" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/manifest.json" />
+    <link rel="mask-icon" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/safari-pinned-tab.svg"
+        color="#603cba" />
+    <link rel="shortcut icon" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/favicon.ico" />
+
+    <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+    <script>window.grecaptcha || document.write('<script src="https:\/\/www.recaptcha.net\/recaptcha\/api.js?hl=en"><\/script>')</script>
+
+    <meta name="msapplication-config"
+        content="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="_csrf" content="463f57cf-e577-4379-b68d-5ca237a110bb" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/iqc1vtw.css" />
+    <link rel="stylesheet" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/css/apps.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        window.workoliaSettings = { "contextPath": "https:\/\/apps.workolia.com", "apiBase": "https:\/\/apps.workolia.com", "sentryOpts": { "enabled": true, "dsn": "https:\/\/a450475be5d14bdfbc12e7ae852dddd2@sentry-tool-1.workolia.com\/4", "release": "workolia-account@202303090438386" } };
+    /*]]>*/
+    </script>
+    <script src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/js/main.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/css/apps-v2.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Create a Workolia Account - Workolia Apps</title>
+</head>
+
+
+<body class="bg-dark text-lg-start  ">
+
+    <div class="page page-outer">
+        <!-- <div id="content" style="display: none;" data-bind="visible: true"> -->
+        <div class="container-xl" data-bind="with: signinSecurityDeviceWebAuthnAssertionVM">
+
+            <!-- Signin header  -->
+            <header>
+                <div class="signin-header">
+
+                    <a href="https://workolia.com/">
+                        <img src="Image/Workolia.png"
+                            width="100%" height="30" />
+                    </a>
+
+                    <a href="https://workolia.com/contact/" class="contact-us text-light">CONTACT US</a>
+                </div>
+            </header>
+            <!-- End of signin header -->
+
+            <div class="main bg-dark text-light">
+                <div class="page-intro apps">
+
+                    <h1 class="page-intro__heading">Sign up for a Workolia Account</h1>
+                    
+                    
+                </div>
+                <div class="page-content unsigned-content">
+                    <form action="/signup" method="post" class="js_double-submit-prevention"><input type="hidden"
+                            name="_csrf" value="463f57cf-e577-4379-b68d-5ca237a110bb" />
+                        <div style="display:none !important"><input type="text" name="contact_me" value="" tabindex="-1"
+                                autocomplete="off" /></div>
+                        <div class="form signup-form">
+                            <h2 class="form__heading"><span>Create a Workolia Account</span>
+                            </h2>
+
+                            <div class="global-errors">
+
+                            </div>
+
+                            <div class="form__field -mg-b-sm">
+                                <label class="form__label" for="name">Full name</label>
+                                <div class="form__control input-wrap">
+                                    <input id="name" name="name" type="text" value="" class="w-full large"
+                                        autocomplete="nickname" data-bind="value: name, valueUpdate: 'afterinput'" />
+
+                                </div>
+                            </div>
+
+                            <div class="form__field -mg-b-sm" data-bind="with: emailViewModel">
+                                <label class="form__label" for="email">Email</label>
+                                <div class="form__control input-wrap">
+
+                                    <input id="email" name="email" type="email" value="" class="w-full large"
+                                        autocorrect="off" autocapitalize="off" autocomplete="username"
+                                        data-bind="value: value, valueUpdate: 'afterinput', css:{ 'errors': hasMessages }, event: { blur: validate }" />
+                                    <div data-bind="visible: hasMessages" style="display: none;">
+                                        <span class="error-message">
+                                            <span data-bind="foreach: messages">
+                                                <div data-bind="text: $data"></div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div data-bind="visible: used" style="display: none">
+                                        <div class="error-message">
+                                            <span>Try another or</span>
+                                            <a href="/signin">Log in from here</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="form__field" data-bind="with: passwordStrengthViewModel">
+                                <label class="form__label" for="password">Password</label>
+                                <div class="form__control input-wrap">
+
+                                    <input id="password" name="password" type="password" value="" maxlength="128"
+                                        class="w-full large" autocomplete="new-password"
+                                        data-bind="value: value, valueUpdate: 'afterinput'" />
+
+                                </div>
+                                <label class="form__label" for="password">Confirm Password</label>
+                                <div class="form__control input-wrap">
+
+                                    <input id="cpassword" name="cpassword" type="password" value="" maxlength="128"
+                                        class="w-full large" autocomplete="new-password"
+                                        data-bind="value: value, valueUpdate: 'afterinput'" />
+
+                                </div>
+
+                                <div class="password-strength mg-t10" data-bind="css: meterClass">
+                                    <div class="password-strength__meter">
+                                        <div class="password-strength__meter-level"></div>
+                                        <div class="password-strength__meter-level"></div>
+                                        <div class="password-strength__meter-level"></div>
+                                        <div class="password-strength__meter-level"></div>
+                                        <div class="password-strength__meter-level"></div>
+                                    </div>
+                                    <p class="password-strength__hint">
+                                        <span>Password strength</span>
+                                        <img width="17px" class="icon"
+                                            src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/common/indicator/indicator_sending.gif"
+                                            style="display: none;" data-bind="visible: loading.inProcess" />
+                                        <b data-bind="text: messages"></b>
+                                    </p>
+
+                                    <div class="password-strength__suggestion" data-bind="visible: showSuggestions"
+                                        style="display: none">
+                                        <p class="password-strength__suggestion-title" data-bind="text: warning"></p>
+                                        <ul class="password-strength__suggestion-list" data-bind="foreach: suggestions">
+                                            <li class="password-strength__suggestion-list-item" data-bind="text: $data">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__field -mg-b-lg">
+                                <div class="nu-checkbox">
+                                    <input id="receiveNewsletter" class="nu-checkbox__button" name="receiveNewsletter"
+                                        type="checkbox" value="true" /><input type="hidden" name="_receiveNewsletter"
+                                        value="on" />
+                                    <label for="receiveNewsletter" class="nu-checkbox__label">It''s ok to send me emails
+                                        about Workolia''s products and services.</label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="form__field -mg-b-lg">
+                                <div class="g-recaptcha" data-callback="enableForm" data-expired-callback="disableForm"
+                                    data-sitekey="6LdMliYUAAAAACqFT_xXfacWDfG08BEMKpbyTSzR"></div>
+                            </div>
+
+                            <div class="form__field align-center -mg-b-lg">
+                                <p class="form__text">By signing up, I agree to Workolia Inc.'s <a
+                                        href="https://workolia.com/terms/" target="_blank" rel="noopener">Terms of
+                                        Service</a> and <a href="https://workolia.com/privacy/" target="_blank"
+                                        rel="noopener">Privacy Policy</a>.</p>
+                            </div>
+
+                            <div class="form-field form-buttons -x-center -mg-b-lg">
+                                <div class="form-buttons__control">                                
+                                <button class="button button-nulab btn btn--normal btn-signup -sz-lg" type="submit" id="next"
+                                    data-bind="click: doSubmitEmail, enable: !sending()">
+                                    <span data-bind="visible: !sending()">Sign up</span>
+                                </button>
+                                </div>
+                            </div>
+
+                            <div class="form__field align-center">
+                                <p class="form__text">
+                                    <span>Already have Account?</span>
+                                    <a class="link-signin" href="login.html">Log in from here</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white text-lg-start " style="background-color: #3f51b5">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <p class="m-3 text-center title">
+                    Workolia
+                </p>
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">Products</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li>
+                            <li class="text-white"> Backlog </a> </li>
+                            <li class="text-white"> Cacoo </a> </li>
+                            <li class="text-white"> Typetalk </a> </li>
+                            <li class="text-white"> Workolia Pass </a> </li>
+                            <li class="text-white"> Pricing </a> </li>
+                            <li class="text-white"> Case Studies </a> </li>
+                            <li class="text-white"> Integrations </a> </li>
+                            <li class="text-white"> Download </a> </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">workflows</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Project Management</a> </li>
+                            <li class="text-white"> Task Management</a> </li>
+                            <li class="text-white"> Issue & Bug Tracking </a> </li>
+                            <li class="text-white"> Version Control</a> </li>
+                            <li class="text-white"> Kanban</a> </li>
+                            <li class="text-white"> Gantt Chart</a> </li>
+                            <li class="text-white"> Remote Work</a> </li>
+                            <li class="text-white"> Client Management</a> </li>
+                            <li class="text-white"> View all workflows</a> </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">Teams</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Development </a> </li>
+                            <li class="text-white"> UX & Design </a> </li>
+                            <li class="text-white"> Product Management </a> </li>
+                            <li class="text-white"> Sales </a> </li>
+                            <li class="text-white"> Marketing </a> </li>
+                            <li class="text-white"> Small Businesses & Startups </a> </li>
+                            <li class="text-white"> View all teams </a> </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">Resourses</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Workolia Help Center </li>
+                            <li class="text-white"> Online Community </li>
+                            <li class="text-white"> System Status </li>
+                            <li class="text-white"> Developers API </li>
+                            <li class="text-white"> Learn </li>
+                            <li class="text-white"> Compare </li>
+                            <li class="text-white"> Diagram Examples </li>
+                            <li class="text-white"> Release Notes </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">ABOUT</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Company </li>
+                            <li class="text-white"> Careers </li>
+                            <li class="text-white"> Blog </li>
+                            <li class="text-white"> Contact us </li>
+                            <li class="text-white"> Security </li>
+                            <li class="text-white"> Privacy Policy </li>
+                            <li class="text-white"> Terms of Service </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+            <hr class="my-5" />
+        <!-- </div> -->
+        <!-- Grid container -->
+
+        <div class="row p-4 pb-0 d-flex justify-content-md-center text-center text-white text-lg-start d-flex justify-content-around"
+            style="background-color: #3f51b5">
+            <div class="col-sm-6 text-center">
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"><i
+                        class="fa fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com" role="button"><i
+                        class="fa fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com" role="button"><i
+                        class="fa fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button"><i
+                        class="fa fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com" role="button"><i
+                        class="fa fa-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn- m-1" href="https://www.github.com" role="button"><i
+                        class="fa fa-github"></i></a>
+                <!-- </section> -->
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+
+            <div class="col-sm-6 text-center">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <!-- <strong>Sign up for our newsletter</strong> -->
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4 ">
+                                <input type="email" id="form5Example21" class="form-control inputbox" />
+                                <label class="form-label" for="form5Example21">Email Us to Subscribe</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4 bg-dark">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+                <!-- </section> -->
+                <!-- Section: Form -->
+            </div>
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://workolia.com/">Workolia.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    </div>
+    </div>
+    </div>
+
+    <script>
+        /*<![CDATA[*/
+        var form = {
+            email: {
+                value: null,
+                messages: []
+            },
+            name: null,
+            bot: true
+        };
+        var vm = new bundle.SignupViewModel(form);
+        bundle.ko.applyBindings(vm);
+
+        var enableForm = function () {
+            vm.bot(false);
+        };
+
+        var disableForm = function () {
+            vm.bot(true);
+        };
+    /*]]>*/
+    </script>
+</body>
+
+</html>

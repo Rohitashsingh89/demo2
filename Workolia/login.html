@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="never" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="description" content="A single sign-on service connecting you to all Workolia apps with one password." />
+    <meta property="og:title" content="What is Workolia Account?" />
+    <meta property="og:description"
+        content="A single sign-on service connecting you to all Workolia apps with one password." />
+    <meta property="og:image" content="https://apps.workolia.com/assets/ogp_dft.png" />
+    <meta property="og:url" content="https://apps.workolia.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="workolia Apps" />
+    <meta property="fb:app_id" content="1394809594066523" />
+    <meta name="application-name" content="workolia Apps" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/favicon-16x16.png"
+        sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/favicon-16x16.png"
+        sizes="16x16" />
+    <link rel="manifest" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/manifest.json" />
+    <link rel="mask-icon" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/safari-pinned-tab.svg"
+        color="#603cba" />
+    <link rel="shortcut icon" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/favicon.ico" />
+    <link rel="canonical" href="https://apps.workolia.com/signin" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script
+        src="https://www.google.com/recaptcha/api.js?hl=en&amp;render=6LcP-TAaAAAAAERwCrKiy7yJzb4jq2LPv4ft0dT6"></script>
+    <script>window.grecaptcha || document.write('<script src="https:\/\/www.recaptcha.net\/recaptcha\/api.js?hl=en\u0026render=6LcP-TAaAAAAAERwCrKiy7yJzb4jq2LPv4ft0dT6"><\/script>')</script>
+
+
+
+    <script>
+        var gtmId = "GTM-WVZSCL";
+        var dataLayerName = "dataLayer";
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', dataLayerName, gtmId);
+    </script>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVZSCL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <meta name="msapplication-config"
+        content="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="_csrf" content="463f57cf-e577-4379-b68d-5ca237a110bb" />
+
+
+    <meta name="smartbanner:title">
+    <meta name="smartbanner:author" content="workolia Inc.">
+    <meta name="smartbanner:price" content="FREE">
+    <meta name="smartbanner:price-suffix-apple" content=" - On the App Store">
+    <meta name="smartbanner:price-suffix-google" content=" - In Google Play">
+    <meta name="smartbanner:icon-apple">
+    <meta name="smartbanner:icon-google">
+    <meta name="smartbanner:button" content="View">
+    <meta name="smartbanner:button-url-apple">
+    <meta name="smartbanner:button-url-google">
+    <meta name="smartbanner:enabled-platforms" content="none">
+    <link rel="stylesheet" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/css/lib/smartbanner.css">
+    <script src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/js/lib/smartbanner-1.9.1.min.js" async>
+    </script>
+
+
+
+    <link rel="stylesheet" href="https://use.typekit.net/iqc1vtw.css" />
+    <link rel="stylesheet" href="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/css/apps-v2.css" />
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        window.nulabSettings = { "contextPath": "https:\/\/apps.nulab.com", "apiBase": "https:\/\/apps.nulab.com", "sentryOpts": { "enabled": true, "dsn": "https:\/\/a450475be5d14bdfbc12e7ae852dddd2@sentry-tool-1.nulab.com\/4", "release": "nulab-account@202303090438386" } };
+        /*]]>*/
+    </script>
+    <script src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/js/main.js"></script>
+
+
+    <title>Login - workolia Account</title>
+</head>
+
+<body class="bg-dark text-lg-start ">
+
+    <div style="display: none;" data-bind="visible: true">
+        <div class="container-xl" data-bind="with: signinSecurityDeviceWebAuthnAssertionVM">
+            <!-- Signin header  -->
+            <header>
+                <div class="signin-header">
+
+                    <a href="https://workolia.com/">
+                        <img src="Image/Workolia.png"
+                            width="100%" height="30" />
+                    </a>
+
+                    <a href="https://workolia.com/contact/" class="contact-us text-light">CONTACT US</a>
+                </div>
+            </header>
+            <!-- End of signin header -->
+
+            <main data-bind="descendantsComplete: onDescendantsComplete">
+                <h2 class="align-center signin-page-title text-light mt-3" >
+                    <!-- data-bind="visible: !!signinExtraParams.existingFlowProduct"> -->
+                    Log in to your Workolia Account</h2>
+                <!-- <h2 id="page-title-existing-flow" class="align-center signin-page-title text-light"
+                    >Log in to your Workolia Account to sign
+                    up for {product}</h2> -->
+
+
+                <form action="/signin" method="post" data-bind="submit: onSubmit, attr: {action: action}">
+                    <input type="hidden" name="_csrf" value="463f57cf-e577-4379-b68d-5ca237a110bb" />
+                    <div style="display:none !important"><input type="text" name="contact_me" value="" tabindex="-1"
+                            autocomplete="off" /></div>
+
+                    <div class="signin-form">
+                        <div class="form-field">
+                            <p class="align-center font-weight-700 signin-form-title text-light">Log in or <a
+                                    href="register.html">create an account</a></p>
+                            <p class="align-center font-weight-700 signin-form-title text-light"
+                                data-bind="visible: !!signinExtraParams.existingFlowProduct">Log in with your email</p>
+                        </div>
+
+
+                        <!-- Login form step 1 -->
+                        <div data-bind="visible: step() == 1" class="signin-form-step">
+                            <!-- Email input -->
+                            <div class="form-field" data-bind="css: { error: emailError() }">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required
+                                    value="" autocapitalize="off" autocomplete="username" autofocus
+                                    data-bind="value: email, textInput: email" />
+                                <label for="password" class="form-label">
+                                    Password
+                                </label>
+                                <input type="password" id="pass" name="pass" placeholder="Password" required value=""
+                                    autocapitalize="off" autocomplete="password" autofocus
+                                    data-bind="value: email, textInput: email" />
+                                <div class="form-field-error-message" data-bind="visible: emailError()">Please enter a
+                                    valid email</div>
+
+                            </div>
+                            <div class="form-field">
+                                <button class="button button-nulab" type="submit" id="next"
+                                    data-bind="click: doSubmitEmail, enable: !sending()">
+                                    <span data-bind="visible: !sending()">Login</span>
+                                    <!-- <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/circle_loading.svg"
+                                        alt="loading" data-bind="visible: sending()" /> -->
+                                </button>
+                            </div>
+                            <!-- End of email input -->
+                        </div>
+
+<!-- 
+                        <div data-bind="visible: step() == 2" class="signin-form-step">
+                            <div class="security-key-image">
+                                <div class="security-key-image__pc"></div>
+                                <div class="security-key-image__usb"></div>
+                            </div>
+                            <div class="security-key-row">
+                                <div class="form__field">
+                                    <div class="remember-me">
+                                        <span class="checkbox">
+                                            <label for="autoSigninWebAuthn">
+                                                <span class="checkbox-wrapper">
+                                                    <input type="checkbox" id="autoSigninWebAuthn"
+                                                        name="autoSigninWebAuthn"
+                                                        data-bind="checked: autoSigninWebAuthn" />
+                                                    <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/unchecked.svg"
+                                                        alt="unchecked" data-bind="visible: !autoSigninWebAuthn()" />
+                                                    <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/checked.svg"
+                                                        alt="checked" data-bind="visible: autoSigninWebAuthn()" />
+                                                    <span class="checkbox-label">Remember me</span>
+                                                </span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <a class="form-link" href="#" data-bind="click: goToPassword">
+                                        <span>Log in another way</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="signin-form-buttons">
+                                    <a href="#" class="button__back" data-bind="visible: !sending(), click: goToEmail">
+                                        <span>Back</span>
+                                    </a>
+                                    <button class="button button-nulab" type="button" id="retry"
+                                        data-bind="click: doRetry, enable: !sending()">
+                                        <span data-bind="visible: !sending(), text: retryButtonText">Retry</span>
+                                        <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/circle_loading.svg"
+                                            alt="loading" data-bind="visible: sending()" />
+                                    </button>
+                                </div>
+                                <p data-bind="visible: sending()">
+                                    <b>Please wait until the operations are completed.</b>
+                                </p>
+                            </div>
+                        </div>
+ -->
+
+                        <!-- <div data-bind="visible: step() == 3" class="signin-form-step"> -->
+                        <!-- Password input -->
+                        <!-- <div class="form-field password">
+                                <label for="password" class="form-label">Password</label>
+                                <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/hide.svg"
+                                    width="24" alt="show password"
+                                    data-bind="visible: passwordShown(), click: hidePassword" />
+                                <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/show.svg"
+                                    width="24" alt="show password"
+                                    data-bind="visible: !passwordShown(), click: showPassword" />
+                                <input data-bind="attr: {type: passwordShown() ? 'text' : 'password'}" name="password"
+                                    id="password" autofocus placeholder="Enter password" />
+                            </div> -->
+
+                        <!-- Recaptcha -->
+                        <!-- <div class="form__field -mg-b-lg">
+
+                                <input type="hidden" name="g-recaptcha-response" value=""
+                                    data-bind="value: recaptchaToken" />
+                            </div> -->
+                        <!-- End of password input -->
+
+                        <!-- Remember me -->
+                        <!-- <div class="form-field">
+                                <div class="remember-me">
+                                    <span class="checkbox">
+                                        <label for="autoSignin">
+                                            <span class="checkbox-wrapper">
+                                                <input type="checkbox" id="autoSignin" name="autoSignin"
+                                                    data-bind="checked: autoSignin" />
+                                                <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/unchecked.svg"
+                                                    alt="unchecked" data-bind="visible: !autoSignin()" />
+                                                <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/checked.svg"
+                                                    alt="checked" data-bind="visible: autoSignin()" />
+                                                <span class="checkbox-label">Remember me</span>
+                                            </span>
+                                        </label>
+                                    </span>
+                                    <a href="/reminder">Forgot password?</a>
+                                </div>
+                            </div> -->
+                        <!-- End of remember me -->
+
+                        <!-- <div class="form-field">
+                                <div class="signin-form-buttons">
+                                    <a href="#" class="button__back" data-bind="visible: !sending(), click: goToEmail">
+                                        <span>Back</span>
+                                    </a>
+                                    <button class="button button-nulab" type="submit" id="signin"
+                                        data-bind="enable: formCompleted && !sending()">
+
+                                        <span data-bind="visible: !sending()">Log in</span>
+                                        <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/circle_loading.svg"
+                                            alt="loading" data-bind="visible: sending()" />
+                                    </button>
+                                </div>
+                            </div> -->
+                    <!-- </div> -->
+
+
+                    <!-- <div data-bind="visible: step() == 4" class="signin-form-step">
+                            <p class="show-signin-email" data-bind="visible: email(), text: email()"></p>
+                            <div class="signin-form-buttons">
+                                <a href="#" class="button__back" data-bind="visible: !sending(), click: goToEmail">
+                                    <span>Back</span>
+                                </a>
+                                <button class="button button-nulab" type="submit" id="saml"
+                                    data-bind="enable: isFilledEmail() && !sending()">
+                                    <span data-bind="visible: !sending()">Login with SAML</span>
+                                    <img src="https://d1lvv0q42gy9jf.cloudfront.net/R20230309_1/assets/img/signin-v2/circle_loading.svg"
+                                        alt="loading" data-bind="visible: sending()" />
+                                </button>
+                            </div>
+                        </div> -->
+                    
+                        <!-- <div class="sign-in-alt form-field">
+                            <span class="line"></span>
+                            <p>Other ways to log in</p>
+                            <span class="line"></span>
+                        </div>
+                        <a href="/signin/spaces" class="button button-nulab-outlined">Log in with Managed Account</a> -->
+                        
+                        <div class="sign-in-alt form-field text-center">
+                            <span class="line"></span>
+                            <p><a href="#" class="anchor-color-white" >Forgot password?</a></p>
+                            <span class="line"></span>
+                        </div>
+                
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white text-lg-start " style="background-color: #3f51b5">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <p class="m-3 text-center title">
+                    Workolia
+                </p>
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">Products</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li>
+                            <li class="text-white"> Backlog </a> </li>
+                            <li class="text-white"> Cacoo </a> </li>
+                            <li class="text-white"> Typetalk </a> </li>
+                            <li class="text-white"> Workolia Pass </a> </li>
+                            <li class="text-white"> Pricing </a> </li>
+                            <li class="text-white"> Case Studies </a> </li>
+                            <li class="text-white"> Integrations </a> </li>
+                            <li class="text-white"> Download </a> </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">workflows</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Project Management</a> </li>
+                            <li class="text-white"> Task Management</a> </li>
+                            <li class="text-white"> Issue & Bug Tracking </a> </li>
+                            <li class="text-white"> Version Control</a> </li>
+                            <li class="text-white"> Kanban</a> </li>
+                            <li class="text-white"> Gantt Chart</a> </li>
+                            <li class="text-white"> Remote Work</a> </li>
+                            <li class="text-white"> Client Management</a> </li>
+                            <li class="text-white"> View all workflows</a> </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">Teams</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Development </a> </li>
+                            <li class="text-white"> UX & Design </a> </li>
+                            <li class="text-white"> Product Management </a> </li>
+                            <li class="text-white"> Sales </a> </li>
+                            <li class="text-white"> Marketing </a> </li>
+                            <li class="text-white"> Small Businesses & Startups </a> </li>
+                            <li class="text-white"> View all teams </a> </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">Resourses</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Workolia Help Center </li>
+                            <li class="text-white"> Online Community </li>
+                            <li class="text-white"> System Status </li>
+                            <li class="text-white"> Developers API </li>
+                            <li class="text-white"> Learn </li>
+                            <li class="text-white"> Compare </li>
+                            <li class="text-white"> Diagram Examples </li>
+                            <li class="text-white"> Release Notes </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <p href="#!" class="text-dark">ABOUT</p>
+                        </h6>
+                        <ul class="list-unstyled mb-2">
+                            <li class="text-white"> Company </li>
+                            <li class="text-white"> Careers </li>
+                            <li class="text-white"> Blog </li>
+                            <li class="text-white"> Contact us </li>
+                            <li class="text-white"> Security </li>
+                            <li class="text-white"> Privacy Policy </li>
+                            <li class="text-white"> Terms of Service </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+            <hr class="my-5" />
+        <!-- </div> -->
+        <!-- Grid container -->
+
+        <div class="row p-4 pb-0 d-flex justify-content-md-center text-center text-white text-lg-start d-flex justify-content-around"
+            style="background-color: #3f51b5">
+            <div class="col-sm-6 text-center">
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"><i
+                        class="fa fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com" role="button"><i
+                        class="fa fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com" role="button"><i
+                        class="fa fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button"><i
+                        class="fa fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com" role="button"><i
+                        class="fa fa-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn- m-1" href="https://www.github.com" role="button"><i
+                        class="fa fa-github"></i></a>
+                <!-- </section> -->
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+
+            <div class="col-sm-6 text-center">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <!-- <strong>Sign up for our newsletter</strong> -->
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4 ">
+                                <input type="email" id="form5Example21" class="form-control inputbox" />
+                                <label class="form-label" for="form5Example21">Email Us to Subscribe</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4 bg-dark">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+                <!-- </section> -->
+                <!-- Section: Form -->
+            </div>
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://workolia.com/">Workolia.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        var form = {
+            autoSignin: true,
+        };
+        var email = null;
+        var recaptchaConfig = {
+            version: "v3",
+            siteKey: "6LcP-TAaAAAAAERwCrKiy7yJzb4jq2LPv4ft0dT6",
+        };
+        var vm = new bundle.SigninSecurityDeviceWebAuthnAssertionViewModel(form, email, recaptchaConfig);
+        bundle.ko.applyBindings({
+            signinSecurityDeviceWebAuthnAssertionVM: vm,
+        });
+                /*]]>*/
+    </script>
+
+
+
+</body>
+
+</html>
